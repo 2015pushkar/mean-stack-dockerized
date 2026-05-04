@@ -1,0 +1,105 @@
+<!-- Hero Section -->
+<section class="nga-hero">
+    <div class="container">
+        <div class="row align-items-center min-vh-75">
+            <div class="col-lg-7 text-center text-lg-start">
+                <span class="badge bg-light text-primary mb-3 px-3 py-2 fs-6">
+                    <i class="fas fa-rocket me-1"></i> Full Stack Application
+                </span>
+                <h1 class="display-3 fw-bold text-white mb-3">
+                    Contact <span class="text-gradient">Manager</span>
+                </h1>
+                <p class="lead text-white-50 mb-4 fs-5">
+                    A modern, full-stack contact management system built with the MEAN stack
+                    (MongoDB, Express.js, Angular, Node.js) and containerized with Docker.
+                </p>
+                <div class="d-flex flex-column flex-sm-row gap-3 justify-content-center justify-content-lg-start">
+                    <a routerLink="/contacts" class="btn btn-light btn-lg px-4 shadow-sm">
+                        <i class="fas fa-users me-2"></i> View Contacts
+                    </a>
+                    <a href="https://github.com/2015pushkar/mean-docker" target="_blank"
+                        class="btn btn-outline-light btn-lg px-4">
+                        <i class="fab fa-github me-2"></i> View on GitHub
+                    </a>
+                </div>
+                <div class="mt-5 d-flex flex-wrap gap-3 justify-content-center justify-content-lg-start">
+                    <span class="badge bg-dark bg-opacity-50 text-white px-3 py-2">
+                        <i class="fab fa-angular me-1"></i> {{ angular }}
+                    </span>
+                    <span class="badge bg-dark bg-opacity-50 text-white px-3 py-2">
+                        <i class="fab fa-bootstrap me-1"></i> {{ bootstrap }}
+                    </span>
+                    <span class="badge bg-dark bg-opacity-50 text-white px-3 py-2">
+                        <i class="fab fa-node-js me-1"></i> {{ expressjs }}
+                    </span>
+                    <span class="badge bg-dark bg-opacity-50 text-white px-3 py-2">
+                        <i class="fas fa-database me-1"></i> {{ mongoDb }}
+                    </span>
+                </div>
+                </div>
+            <div class="col-lg-5 d-none d-lg-block">
+                <div class="nga-hero-graphic">
+                    <div class="nga-stack-icons">
+                        <div class="nga-icon-circle" style="--delay: 0s; --color: #dd0031;">
+                            <i class="fab fa-angular fa-2x"></i>
+                        </div>
+                        <div class="nga-icon-circle" style="--delay: 0.2s; --color: #339933;">
+                            <i class="fab fa-node-js fa-2x"></i>
+                        </div>
+                        <div class="nga-icon-circle" style="--delay: 0.4s; --color: #47a248;">
+                            <i class="fas fa-database fa-2x"></i>
+                        </div>
+                        <div class="nga-icon-circle" style="--delay: 0.6s; --color: #2496ed;">
+                            <i class="fab fa-docker fa-2x"></i>
+                        </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Features Section -->
+<section class="py-5 bg-light">
+    <div class="container py-4">
+        <div class="text-center mb-5">
+            <h2 class="display-6 fw-bold mb-3">Powered by Modern Technologies</h2>
+            <p class="text-muted lead mx-auto" style="max-width: 600px;">
+                Built with industry-standard tools and frameworks for scalability, performance, and developer
+                experience.
+            </p>
+        </div>
+        <div class="row g-4">
+            @for (tech of technologies; track tech.name) {
+            <div class="col-md-6 col-lg-4">
+                <div class="nga-tech-card h-100">
+                    <div class="nga-tech-icon" [style.background-color]="tech.color + '15'" [style.color]="tech.color">
+                        <i [class]="tech.icon + ' fa-2x'"></i>
+                    </div>
+                    <h3 class="h5 fw-bold mb-2">{{ tech.name }}</h3>
+                    <p class="text-muted mb-0 small">{{ tech.description }}</p>
+                    </div>
+                    </div>
+            }
+            </div>
+            </div>
+</section>
+
+<!-- CTA Section -->
+<section class="py-5 nga-cta-section">
+    <div class="container text-center py-4">
+        <h2 class="display-6 fw-bold text-white mb-3">Ready to Get Started?</h2>
+        <p class="lead text-white-50 mb-4 mx-auto" style="max-width: 500px;">
+            Explore the codebase, contribute, or use it as a foundation for your own projects.
+        </p>
+        <div class="d-flex flex-column flex-sm-row gap-3 justify-content-center">
+            <a href="https://github.com/2015pushkar/mean-docker?tab=readme-ov-file#overview" target="_blank"
+                class="btn btn-light btn-lg px-4">
+                <i class="fas fa-book me-2"></i> Documentation
+            </a>
+            <a href="https://github.com/2015pushkar/mean-docker/fork" target="_blank" class="btn btn-outline-light btn-lg px-4">
+                <i class="fas fa-code-branch me-2"></i> Fork Repository
+            </a>
+            </div>
+            </div>
+</section>

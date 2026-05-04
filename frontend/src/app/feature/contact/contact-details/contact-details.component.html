@@ -1,0 +1,83 @@
+<div class="container py-5">
+    @if (contact()) {
+    <div class="row justify-content-center">
+        <div class="col-lg-8">
+            <div class="card shadow-sm border-0">
+                <div class="card-header bg-primary text-white d-flex align-items-center">
+                    <i class="fas fa-user-circle fa-lg me-2"></i>
+                    <h4 class="mb-0">Contact Details</h4>
+                </div>
+                <div class="card-body p-4">
+                    <div class="row mb-4">
+                        <div class="col-md-6 mb-3">
+                            <div class="detail-item">
+                                <label class="text-muted small text-uppercase fw-semibold">First Name</label>
+                                <p class="fs-5 mb-0">{{ contact().firstName }}</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <div class="detail-item">
+                                <label class="text-muted small text-uppercase fw-semibold">Last Name</label>
+                                <p class="fs-5 mb-0">{{ contact().lastName }}</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mb-4">
+                        <div class="col-md-6 mb-3">
+                            <div class="detail-item">
+                                <label class="text-muted small text-uppercase fw-semibold">Email</label>
+                                <p class="fs-5 mb-0">
+                                    <a href="mailto:{{ contact().email }}" class="text-decoration-none">
+                                        <i class="fas fa-envelope me-1 text-primary"></i>{{ contact().email }}
+                                    </a>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <div class="detail-item">
+                                <label class="text-muted small text-uppercase fw-semibold">Mobile</label>
+                                <p class="fs-5 mb-0">
+                                    <a href="tel:{{ contact().mobile }}" class="text-decoration-none">
+                                        <i class="fas fa-phone me-1 text-primary"></i>{{ contact().mobile }}
+                                    </a>
+                                </p>
+                            </div>
+                        </div>
+                        </div>
+                    <div class="row mb-4">
+                        <div class="col-md-6 mb-3">
+                            <div class="detail-item">
+                                <label class="text-muted small text-uppercase fw-semibold">City</label>
+                                <p class="fs-5 mb-0">
+                                    <i class="fas fa-map-marker-alt me-1 text-primary"></i>{{ contact().city }}
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <div class="detail-item">
+                                <label class="text-muted small text-uppercase fw-semibold">Postal Code</label>
+                                <p class="fs-5 mb-0">{{ contact().postalCode }}</p>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                <div class="card-footer bg-light d-flex justify-content-between align-items-center py-3">
+                    <a [routerLink]="['/contacts']" class="btn btn-outline-secondary">
+                        <i class="fas fa-arrow-left me-1"></i> Back to List
+                    </a>
+                    <button type="button" class="btn btn-primary" (click)="edit()">
+                        <i class="fas fa-edit me-1"></i> Edit Contact
+                    </button>
+                </div>
+            </div>
+        </div>
+        </div>
+    } @else {
+    <div class="text-center py-5">
+        <div class="spinner-border text-primary" role="status">
+            <span class="visually-hidden">Loading...</span>
+        </div>
+        <p class="mt-3 text-muted">Loading contact details...</p>
+    </div>
+    }
+</div>
