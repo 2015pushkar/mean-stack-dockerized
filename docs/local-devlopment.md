@@ -102,7 +102,7 @@ Before getting started, make sure you have the following installed:
 
 1. Navigate to the API directory:
    ```bash
-   cd mean-docker/api
+   cd mean-stack-dockerized/api
    ```
 
 2. Install dependencies:
@@ -138,7 +138,7 @@ The API will be available at `http://localhost:3000/api`.
 
 1. Navigate to the frontend directory:
    ```bash
-   cd mean-docker/frontend
+   cd mean-stack-dockerized/frontend
    ```
 2. Updated the API endpoint in environment.ts
 
@@ -230,14 +230,14 @@ If authentication fails:
 ### Backend
 
 ```bash
-cd mean-docker/api
+cd mean-stack-dockerized/api
 npm run build
 ```
 
 ### Frontend
 
 ```bash
-cd mean-docker/frontend
+cd mean-stack-dockerized/frontend
 npm run build:prod
 ```
 

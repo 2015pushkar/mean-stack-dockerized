@@ -162,5 +162,5 @@ This document outlines the development plans for the MEAN Stack Contacts Applica
 
 We welcome community input on prioritizing these items. Please submit your feedback through:
 
-- [GitHub Issues](https://github.com/2015pushkar/mean-docker/issues)
-- [Feature Requests](https://github.com/2015pushkar/mean-docker/issues/new?template=feature_request.md).
+- [GitHub Issues](https://github.com/2015pushkar/mean-stack-dockerized/issues)
+- [Feature Requests](https://github.com/2015pushkar/mean-stack-dockerized/issues/new?template=feature_request.md).

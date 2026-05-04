@@ -2,7 +2,7 @@ title: MEAN (Docker)
 description: A full-featured contact management application built with TypeScript-powered MEAN stack with Docker Support.
 remote_theme: just-the-docs/just-the-docs
 
-url: https://2015pushkar.github.io/mean-docker
+url: https://2015pushkar.github.io/mean-stack-dockerized
 
 # Enable support for hyphenated search keywords
 search_tokenizer_separator: /[\s/]+/
@@ -10,7 +10,7 @@ search_tokenizer_separator: /[\s/]+/
 # Aux links for the upper right navigation
 aux_links:
   "View on GitHub":
-    - "//github.com/2015pushkar/mean-docker"
+    - "//github.com/2015pushkar/mean-stack-dockerized"
 
 # Footer content
 footer_content: "Copyright &copy; 2026 Pushkar Wani. Distributed by an MIT license."
@@ -44,14 +44,14 @@ kramdown:
 # Add custom CSS for spacing
 gh_edit_link: true
 gh_edit_link_text: "Edit this page on GitHub"
-gh_edit_repository: "https://github.com/2015pushkar/mean-docker"
+gh_edit_repository: "https://github.com/2015pushkar/mean-stack-dockerized"
 gh_edit_branch: "master"
 gh_edit_view_mode: "tree"
 
 # Enable navigation structure
 nav_external_links:
   - title: MEAN Stack Contacts on GitHub
-    url: https://github.com/2015pushkar/mean-docker
+    url: https://github.com/2015pushkar/mean-stack-dockerized
     hide_icon: false
 
 # Back to top link

@@ -231,8 +231,8 @@ flowchart TB
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/2015pushkar/mean-docker
-cd mean-docker
+git clone https://github.com/2015pushkar/mean-stack-dockerized
+cd mean-stack-dockerized
 
 # 2. Create environment file
 cp .env.example .env
@@ -357,8 +357,8 @@ See the [complete roadmap](docs/roadmap.md) for details.
 
 Contributions are welcome. Please review our [Contributing Guide](CONTRIBUTING.md) before submitting changes.
 
-- [Report a Bug](https://github.com/2015pushkar/mean-docker/issues/new?template=bug_report.md)
-- [Request a Feature](https://github.com/2015pushkar/mean-docker/issues/new?template=feature_request.md)
+- [Report a Bug](https://github.com/2015pushkar/mean-stack-dockerized/issues/new?template=bug_report.md)
+- [Request a Feature](https://github.com/2015pushkar/mean-stack-dockerized/issues/new?template=feature_request.md)
 
 ---
 

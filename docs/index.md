@@ -12,7 +12,7 @@ A full-stack TypeScript contact management application with comprehensive Docker
 {: .fs-6 .fw-300 }
 
 [Get Started](#-getting-started-in-30-seconds){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }
-[View on GitHub](https://github.com/2015pushkar/mean-docker){: .btn .fs-5 .mb-4 .mb-md-0 }
+[View on GitHub](https://github.com/2015pushkar/mean-stack-dockerized){: .btn .fs-5 .mb-4 .mb-md-0 }
 
 ---
 
@@ -44,12 +44,12 @@ A modern, full-stack TypeScript contact management system built with the MEAN st
 
 Clone the repository:
 ```bash
-git clone https://github.com/2015pushkar/mean-docker.git
+git clone https://github.com/2015pushkar/mean-stack-dockerized.git
 ```
 
 Navigate to project folder:
 ```bash
-cd mean-docker
+cd mean-stack-dockerized
 ```
 
 Create environment file:
@@ -125,10 +125,10 @@ We welcome contributions!
 
 If you'd like to contribute to this project:
 
-- For bug reports, please use our [Bug Report Template](https://github.com/2015pushkar/mean-docker/issues/new?template=bug_report.md)
-- For feature requests, please use our [Feature Request Template](https://github.com/2015pushkar/mean-docker/issues/new?template=feature_request.md)
-- For general issues or questions, please visit our [Issues page](https://github.com/2015pushkar/mean-docker/issues)
+- For bug reports, please use our [Bug Report Template](https://github.com/2015pushkar/mean-stack-dockerized/issues/new?template=bug_report.md)
+- For feature requests, please use our [Feature Request Template](https://github.com/2015pushkar/mean-stack-dockerized/issues/new?template=feature_request.md)
+- For general issues or questions, please visit our [Issues page](https://github.com/2015pushkar/mean-stack-dockerized/issues)
 
 ## 📄 License
 
-This project is licensed under the MIT License - see the [LICENSE](https://github.com/2015pushkar/mean-docker/blob/master/LICENSE){:target="_blank"} file for details.
+This project is licensed under the MIT License - see the [LICENSE](https://github.com/2015pushkar/mean-stack-dockerized/blob/master/LICENSE){:target="_blank"} file for details.

@@ -24,7 +24,7 @@ This guide explains the Docker configuration for the MEAN Stack Contacts applica
 The Angular frontend uses a multi-stage build process to create a small, optimized production image:
 
 ```dockerfile
-# filepath: /Users/nks/workspace/personal/public/mean-docker/frontend/Dockerfile
+# filepath: /Users/nks/workspace/personal/public/mean-stack-dockerized/frontend/Dockerfile
 
 # Create image based off of the official Node 22-alpine image
 FROM node:22-alpine as builder
@@ -65,7 +65,7 @@ CMD ["node", "dist/contacts/server/server.mjs"]
 The Express.js API Dockerfile:
 
 ```dockerfile
-# filepath: /Users/nks/workspace/personal/public/mean-docker/api/Dockerfile
+# filepath: /Users/nks/workspace/personal/public/mean-stack-dockerized/api/Dockerfile
 
 FROM node:22-alpine
 # Create directory for application
@@ -96,7 +96,7 @@ CMD ["node", "dist/server.js"]
 The Nginx load balancer Dockerfile:
 
 ```dockerfile
-# filepath: /Users/nks/workspace/personal/public/mean-docker/loadbalancer/Dockerfile
+# filepath: /Users/nks/workspace/personal/public/mean-stack-dockerized/loadbalancer/Dockerfile
 
 FROM nginx:alpine
 # Remove default configuration
@@ -280,7 +280,7 @@ networks:
 The Nginx configuration file used for routing:
 
 ```nginx
-# filepath: /Users/nks/workspace/personal/public/mean-docker/loadbalancer/nginx.conf
+# filepath: /Users/nks/workspace/personal/public/mean-stack-dockerized/loadbalancer/nginx.conf
 
 server {
   listen 80;
@@ -316,7 +316,7 @@ This configuration:
 The project also includes a configuration for deploying using pre-built images from Docker Hub:
 
 ```yaml
-# filepath: /Users/nks/workspace/personal/public/mean-docker/docker-compose.hub.yml
+# filepath: /Users/nks/workspace/personal/public/mean-stack-dockerized/docker-compose.hub.yml
 
 version: '3'
 services:
